@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>D'Styles VIP Barber — SMS Consent Step (VIP Membership Request Form)</title>
+<style>
+  :root{
+    --black:#000000; --panel:#0d0d0d; --gold:#db9d13; --gold-soft:#f0bd43;
+    --ivory:#ffffff; --muted:#b9b9c2; --line:rgba(219,157,19,.26); --line-soft:rgba(255,255,255,.08);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--black);color:var(--ivory);font-family:Arial,Helvetica,sans-serif;line-height:1.6;padding:28px 18px 60px}
+  .shell{max-width:720px;margin:0 auto}
+  .notice{border:1px solid var(--line);background:var(--panel);padding:20px 22px;margin-bottom:28px;font-size:13px;color:var(--muted)}
+  .notice strong{color:var(--gold-soft);display:block;margin-bottom:6px;font-size:14px}
+  .notice a{color:var(--gold-soft)}
+  h1{font-size:22px;margin:0 0 4px}
+  .subtitle{color:var(--muted);font-size:13px;margin:0 0 26px}
+  fieldset{border:1px solid var(--line-soft);padding:18px;margin:0 0 18px;border-radius:2px}
+  legend{padding:0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold-soft)}
+  .fine-print{font-size:12px;color:#999;margin:0 0 16px;line-height:1.55}
+  .fine-print a{color:var(--gold-soft)}
+  .consent-stack{display:grid;gap:14px}
+  .consent-stack label{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#e8e4de;cursor:pointer}
+  .consent-stack input[type="checkbox"]{width:18px;height:18px;margin-top:2px;flex:0 0 auto;accent-color:var(--gold)}
+  .required-tag{display:inline-block;margin-left:6px;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold-soft)}
+  .optional-tag{display:inline-block;margin-left:6px;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#888}
+  footer{margin-top:30px;font-size:11px;color:#777}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="notice">
+    <strong>What this page is</strong>
+    This is a static, publicly reachable reproduction of the SMS consent step that appears on D'Styles VIP Barber's live VIP Membership request form at
+    <a href="https://www.dstyles4u.com/vip-membership">https://www.dstyles4u.com/vip-membership</a>.
+    The live form renders this step client-side; this page exists solely so the exact opt-in checkboxes and consent wording can be verified directly, without requiring JavaScript execution or form submission.
+    Text reproduced below is verbatim from the live site.
+  </div>
+
+  <h1>VIP Membership Request — Text Messaging Consent</h1>
+  <p class="subtitle">Excerpt of the membership request form, showing the SMS opt-in step exactly as it appears before submission.</p>
+
+  <fieldset>
+    <legend>Text Messaging Consent</legend>
+    <p class="fine-print">By providing your mobile number above, you may receive text messages from D'Styles VIP Barber as described below. Carrier message and data rates may apply. You are not required to consent to marketing texts to submit this request or to become a member. See our <a href="https://dstyles4u.github.io/dstyles-legal-pages/privacy-policy.html">Privacy Policy</a> and <a href="https://dstyles4u.github.io/dstyles-legal-pages/terms-conditions.html">Terms &amp; Conditions</a> for details.</p>
+    <div class="consent-stack">
+      <label>
+        <input type="checkbox" name="Transactional SMS Consent" value="Yes" required>
+        <span>I agree to receive text messages from D'Styles VIP Barber related to my membership request, appointments, and account — including confirmations, reminders, and policy notices. Message frequency varies. Message and data rates may apply. Reply STOP to cancel, HELP for help.<span class="required-tag">Required to submit</span></span>
+      </label>
+      <label>
+        <input type="checkbox" name="Marketing SMS Consent" value="Yes">
+        <span>I agree to receive marketing and promotional text messages from D'Styles VIP Barber, such as membership updates, availability notices, and offers, sent using an automatic telephone dialing system or similar technology. Consent is not a condition of purchase or membership. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help.<span class="optional-tag">Optional — not required</span></span>
+      </label>
+    </div>
+  </fieldset>
+
+  <footer>
+    Both checkboxes are unchecked by default. Only the transactional consent checkbox is required to submit the membership request; the marketing consent checkbox is optional and submission is not conditioned on checking it.
+  </footer>
+</div>
+</body>
+</html>
